@@ -1,0 +1,45 @@
+/* Light mode */
+@media (prefers-color-scheme: light) {
+  :root {
+    --primary-bg-color:          #ebd8be;
+    --content-bg-color:          #fbf5ec;
+    --highlight-bg-color:        #f7ead9;
+    --primary-text-color:        #110d16;
+    --secondary-text-color:      #59506d;
+    --fresh-link-color:          #1757e3;
+    --hover-link-color:          #197cf9;
+    --active-link-color:         #6b66ff;
+    --visited-link-color:        #a237b7;
+    --visited-hover-link-color:  #c148d2;
+    --visited-active-link-color: #d43386;
+    --fresh-interact-color:      var(--highlight-bg-color);
+    --hover-interact-color:      #f1e1cc;
+    --active-interact-color:     var(--primary-bg-color);
+  }
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary-bg-color:          #020710;
+    --content-bg-color:          #0e131e;
+    --highlight-bg-color:        #1a304c;
+    --primary-text-color:        #f3e6d4;
+    --secondary-text-color:      #203c62;
+    --fresh-link-color:          #47a6ff;
+    --hover-link-color:          #255ed5;
+    --active-link-color:         #3034ff;
+    --visited-link-color:        #b57cd9;
+    --visited-hover-link-color:  #b05fbb;
+    --visited-active-link-color: #a248b4;
+    --fresh-interact-color:      #1b1621;
+    --hover-interact-color:      var(--highlight-bg-color);
+    --active-interact-color:     #302839;
+  }
+}
+
+:root {
+  --code-font:    'Source Code Pro', 'Consolas', 'Cascadia Code', 'Courier New', monospace;
+  --writing-font: 'Lato', sans-serif;
+  --title-font:   'Roboto', sans-serif;
+}

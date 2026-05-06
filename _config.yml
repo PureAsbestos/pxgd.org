@@ -1,0 +1,73 @@
+defaults:
+  -
+    scope:
+      path: "assets"
+    values:
+      layout: "nothing"
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: "pages"
+    values:
+      layout: "default"
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
+
+permalink: /:categories/:year/:month/:day/:title #:output_ext
+
+title: "PxGd"
+
+collections:
+  - fonts
+
+
+
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  #input: GFM
+  syntax_highlighter_opts:
+    default_lang: html
+    css_class: 'highlight'
+    line_numbers: false
+    # span:
+      # line_numbers: false
+    # block:
+      # formatter: Rouge::Formatters::HTMLLinewise
+      # wrap: true
+      # tag_name: span
+      # class: line
+
+
+whitelist:
+  - jekyll-coffeescript
+  - jekyll-commonmark-ghpages
+  - jekyll-feed
+  - jekyll-gist
+  - jekyll-github-metadata
+  - jekyll-paginate
+  - jekyll-redirect-from
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-avatar
+  - jemoji
+  - jekyll-mentions
+  - jekyll-relative-links
+  - jekyll-optional-front-matter
+  - jekyll-readme-index
+  - jekyll-default-layout
+  - jekyll-titles-from-headings
+  - jekyll-include-cache
+  - jekyll-octicons
+  - jekyll-remote-theme
+
+lsi: false
+safe: true
+jailed: true
+
+excerpt_separator: <!--end-blurb-->

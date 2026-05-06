@@ -1,0 +1,1 @@
+{% assign newline_character = '%0A' | url_decode %}{% assign startpart = include.line | slice: 0, 7 %}{% if startpart == '</span>' %}{% assign rest = include.line | slice: 7, include.line.size %}</span><span class="line">{{ rest }}{{ newline_character }}</span>{% else %}<span class="line">{{ include.line }}{{ newline_character }}</span>{% endif %}
