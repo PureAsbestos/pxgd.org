@@ -32,9 +32,9 @@
     --visited-link-color:        #b57cd9;
     --visited-hover-link-color:  #b05fbb;
     --visited-active-link-color: #a248b4;
-    --fresh-interact-color:      #1b1621;
+    --fresh-interact-color:      #172233;
     --hover-interact-color:      var(--highlight-bg-color);
-    --active-interact-color:     #302839;
+    --active-interact-color:     #2f4060;
   }
 }
 

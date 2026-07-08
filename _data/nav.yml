@@ -1,0 +1,13 @@
+items:
+
+- text: Downloads
+  url: https://github.com/PureAsbestos/pxgd/releases
+
+- text: Source
+  url: https://github.com/PureAsbestos/pxgd
+
+# - text: Docs
+#   url: /docs
+
+# - text: Blog
+#   url: /blog

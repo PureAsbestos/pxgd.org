@@ -52,6 +52,8 @@ header {
   font-family: var(--title-font);
   font-weight: 700;
   padding: 1.5rem;
+  display: flex;
+  justify-content: space-between;
 }
 header h1 {
   margin: unset;
@@ -146,11 +148,15 @@ input::placeholder {
 
 /* navigation bar */
 nav {
+  counter-reset: count 0;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(10ch, 1fr));
-  margin-top: 1.5rem;
+  grid-template-columns: repeat(auto-fit, 12ch);
+  margin-block: auto;
+  flex: 12ch;
+  justify-content: flex-end;
 }
 nav a {
+  counter-increment: count;
   margin: unset;
   padding-block: 0.25rem;
   text-align: center;
@@ -263,4 +269,9 @@ main.notfound {
 
 .notfound h1 {
     font-size: 4rem;
+}
+
+
+img {
+  max-width: 100%;
 }
